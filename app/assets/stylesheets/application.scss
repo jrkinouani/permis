@@ -1,2 +1,59 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@media (min-width: 320px) and (max-width: 480px) {
+
+  a.btn.btn-primary
+  {
+      margin-right: 10px;
+      margin-top: 5px;
+      margin-left: 16px;
+  }
+  a.btn.btn-danger
+  {
+      margin-right: 10px;
+      margin-top: 5px;
+      margin-left: 16px;
+  }
+
+}
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.navbar {
+    position: relative;
+    min-height: 90px;
+    padding-top: 15px;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    background-color: #000000;
+}
+.navbar-inverse .navbar-brand
+{
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-weight: bolder;
+}
+.navbar-right {
+
+     padding-top:  20px;
+}
+.navbar-left {
+
+     padding-top:  20px;
+}
+a.btn.btn-primary
+{
+    margin-right: 10px;
+
+}
+img.imglogo
+{
+    width: 190px;
+    margin-top: 5px;
+}
