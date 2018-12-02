@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def apropos
   end
+  def mentions
+
+  end
 end
