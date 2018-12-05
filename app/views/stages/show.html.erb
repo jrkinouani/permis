@@ -1,0 +1,21 @@
+<section class="pricing py-5">
+<div class="container">
+ <div class="row">
+    <div class=" col-lg-offset-4 col-lg-4 col-sm-6 col-sm-offset-3 col-xs-12" id="content_page_show">
+      <h3>Voici la stagee que vous avec choisit</h3>
+      <div class="card mb-5 mb-lg-0">
+        <div class="card-body">
+           <h5 class="card-title text-muted text-uppercase text-center"><%= @stage.titre %></h5>
+           <h6 class="card-price text-center"><%= @stage.price %> € <span class="period"> le stage </span></h6>
+          <hr>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fas fa-check"></i></span><%= @stage.date1 %></li>
+            <li><span class="fa-li"><i class="fas fa-check"></i></span><%= @stage.ville %> </li>
+          </ul>
+
+        </div>
+       </div>
+    </div>
+ </div>
+</div>
+</section>
