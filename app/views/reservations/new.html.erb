@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row" id="content_page_index">
+    <div class=" col-lg-offset-3 col-lg-6 col-sm-6 col-sm-offset-3 col-xs-12" id="content_page_show">
+    <div class="text-center">
+      <h3 class="title_résa-index">Pour faire une réservation choisissez une date et un créneau</h3>
+    </div>
+
+
+      <%= form_for @reservation do |f | %>
+        <div class="col-md-6 ">
+          <label for="">choisissez une date</label>
+          <%= f.text_field :first_name,  placeholder: 'ex :Dimitri', class: "form-control"%>
+      </div>
+      <div class="col-md-6">
+        <label for="">Entrez votre nom complet</label>
+        <%= f.text_field :last_name, placeholder: 'ex :payet',  class: "form-control"  %>
+      </div>
+      <div class="col-md-6">
+        <label for="">Entrez votre numero de téléphone</label>
+        <%= f.text_field :email, placeholder: 'ex dimitri@payet.re',  class: "form-control"  %>
+      </div>
+      <div class="col-md-6">
+        <label for="">Sélectionnez un créneau</label>
+        <%= f.text_field :phone, placeholder: 'ex 0692 12 33 44',  class: "form-control"  %>
+      </div>
+      <div class="col-md-6">
+        <label for="">Sélectionnez un créneau</label>
+        <%= f.text_field :address, placeholder: 'ex 0692 12 33 44',  class: "form-control"  %>
+      </div>
+       <div class="col-md-12 col-sm-12 col-xs-12">
+          <%= f.hidden_field :stage_id, value: @stage.id %>
+      </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <%= f.submit 'Validez votre location', :class => "btn btn-primary navbar-btn"%>
+            </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -10,5 +10,12 @@ Rails.application.routes.draw do
   get '/apropos'  => 'pages#apropos'
   get "/mentions" => 'pages#mentions'
   resources :stages
+
+
+  resources :reservations, only: [:index, :show, :new, :create]
+  get 'reservations/_form'
+  get 'reservations/edit'
+  get 'reservations/show'
+  get 'reservations/index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

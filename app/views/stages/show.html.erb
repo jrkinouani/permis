@@ -12,7 +12,7 @@
             <li><span class="fa-li"><i class="far fa-calendar-alt"></i></span><%= @stage.date1 %></li>
             <li><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><%= @stage.ville %> </li>
           </ul>
-
+          <%= link_to 'Faire une réservation', new_reservation_path(stage_id: @stage.id), class: "btn btn-primary navbar-btn", id: "btn_car_show"%>
         </div>
        </div>
     </div>
