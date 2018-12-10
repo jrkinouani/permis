@@ -5,15 +5,15 @@
       <h1>Choississez votre stage</h1>
     </div>
     <% @stages.each do | stage | %>
-      <div class="col-lg-3">
+    <div class=" col-lg-3 col-sm-6 col-sm--3 col-xs-12" >
        <div class="card mb-5 mb-lg-0">
         <div class="card-body">
         <h3 class="card-title text-muted text-uppercase text-center"><%= stage.titre %></h3>
         <h6 class="card-price text-center"><%= stage.price %> €<span class="period"> le stage</span></h6>
         <hr>
         <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fas fa-check"></i></span><%= stage.date1 %></li>
-          <li><span class="fa-li"><i class="fas fa-check"></i></span><%= stage.ville %> </li>
+          <li><span class="fa-li"><i class="far fa-calendar-alt"></i></span><%= stage.date1 %></li>
+          <li><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><%= stage.ville %> </li>
         </ul>
         <h4><%= button_to "Réservez ! ", stage_path(stage), :class => "btn btn-block btn-primary text-uppercase", :method => :get %></h4>
         </div>

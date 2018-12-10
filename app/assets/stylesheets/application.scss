@@ -1,5 +1,67 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+@media (max-width: 1200px)
+{
+    .navbar-header
+    {
+        float: none;
+    }
+    .navbar-left,.navbar-right
+    {
+        float: none !important;
+    }
+    .navbar-toggle
+    {
+        display: block;
+    }
+    .navbar-collapse
+    {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top
+    {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse
+    {
+        display: none!important;
+
+    }
+    .navbar-nav
+    {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li
+    {
+        float: none;
+    }
+    .navbar-nav>li>a
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in
+    {
+        display:block !important;
+    }
+    a.btn.btn-primary
+    {
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-left: 16px;
+    }
+    a.btn.btn-danger
+    {
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-left: 16px;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
 
   a.btn.btn-primary
@@ -60,7 +122,9 @@ img.imglogo
 /*page index */
 section.pricing {
   padding-top: 50px;
-  /*background: #9CECFB;
+  background: #f1f4f7;
+  height: 100%;
+  padding-bottom: 100px;
   /* fallback for old browsers */
   /*background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
   /* Chrome 10-25, Safari 5.1-6 */
@@ -75,6 +139,7 @@ section.pricing {
   box-shadow: 0rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.1);
   padding-top: 20px;
   padding-bottom: 2px;
+  background-color: #fff;
 }
 
 .pricing hr {
@@ -126,5 +191,12 @@ section.pricing {
     opacity: 1;
   }
 }
-
+i.fas.fa-map-marker-alt
+{
+    color: red;
+}
+i.far.fa-calendar-alt
+{
+    color: #2BA9BF;
+}
 /* page index end */
