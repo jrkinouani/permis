@@ -2,7 +2,7 @@
 <div class="container">
  <div class="row">
     <div class=" col-lg-offset-4 col-lg-4 col-sm-6 col-sm-offset-3 col-xs-12" id="content_page_show">
-      <h3>Voici la stagee que vous avec choisit</h3>
+      <h3>Voici la stage que vous avec choisit</h3>
       <div class="card mb-5 mb-lg-0">
         <div class="card-body">
            <h5 class="card-title text-muted text-uppercase text-center"><%= @stage.titre %></h5>
@@ -12,7 +12,7 @@
             <li><span class="fa-li"><i class="far fa-calendar-alt"></i></span><%= @stage.date1 %></li>
             <li><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><%= @stage.ville %> </li>
           </ul>
-          <%= link_to 'Faire une réservation', new_reservation_path(stage_id: @stage.id), class: "btn btn-primary navbar-btn", id: "btn_car_show"%>
+          <%= link_to 'Faire une réservation', new_reservation_path(stage_id: @stage.id), class: "btn btn-block btn-primary text-uppercase", id: "btn_car_show"%>
         </div>
        </div>
     </div>
