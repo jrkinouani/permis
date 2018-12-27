@@ -91,14 +91,14 @@
     border: 0px solid transparent;
     border-radius: 0px;
     margin-bottom: 0px;
-    background-color: #000000;
+    background-color:#fff;
 }
 .navbar-inverse .navbar-brand
 {
-    color: #fff;
+    color: #000000;
 }
 .navbar-inverse .navbar-nav > li > a {
-    color: #fff;
+    color: #000000;
     font-weight: bolder;
 }
 .navbar-right {
@@ -118,6 +118,12 @@ img.imglogo
 {
     width: 190px;
     margin-top: 5px;
+}
+/*page.gome*/
+div#section.home.col-xl-6.col-lg-6
+{
+    padding-left: 0px;
+    padding-right: 0px;
 }
 /*page index */
 section.pricing {
