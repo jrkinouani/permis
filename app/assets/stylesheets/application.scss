@@ -60,16 +60,14 @@
         margin-top: 5px;
         margin-left: 16px;
     }
+    img#img.home.img-responsive
+    {
+        height: 700px!important;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  a.btn.btn-primary
-  {
-      margin-right: 10px;
-      margin-top: 5px;
-      margin-left: 16px;
-  }
   a.btn.btn-danger
   {
       margin-right: 10px;
@@ -101,6 +99,10 @@
     color: #000000;
     font-weight: bolder;
 }
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #7C7C7C;
+    font-weight: bolder;
+}
 .navbar-right {
 
      padding-top:  20px;
@@ -109,15 +111,33 @@
 
      padding-top:  20px;
 }
-a.btn.btn-primary
+a.btn.btn-danger
 {
     margin-right: 10px;
-
+    background-color: #84BB3C;
+    border-color: #84BB3C;
+}
+.btn-danger:hover
+{
+    margin-right: 10px;
+    background-color: #fff!important;
+    border-color: #5CFC3C!important;
 }
 img.imglogo
 {
     width: 190px;
     margin-top: 5px;
+    margin-bottom: 10px;
+}
+#underline
+{
+  border-bottom: 3px solid #84BB3C;
+  padding-bottom: 5px;
+}
+#underline:hover
+{
+  border-bottom: 3px solid blue;
+  padding-bottom: 5px;
 }
 /*page.gome*/
 div#section.home.col-xl-6.col-lg-6
@@ -125,6 +145,7 @@ div#section.home.col-xl-6.col-lg-6
     padding-left: 0px;
     padding-right: 0px;
 }
+
 /*page index */
 section.pricing {
   padding-top: 50px;
