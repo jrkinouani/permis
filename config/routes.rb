@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   root :to => 'pages#home'
   get '/apropos'  => 'pages#apropos'
   get "/mentions" => 'pages#mentions'
+  get "/infos_stage" => 'pages#infos_stage'
   resources :stages
 
 

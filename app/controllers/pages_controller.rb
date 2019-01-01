@@ -7,4 +7,7 @@ class PagesController < ApplicationController
   def mentions
 
   end
+  def infos_stage
+
+  end
 end
