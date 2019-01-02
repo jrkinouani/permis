@@ -194,6 +194,47 @@ section.jumbotron.text-center
 {
     margin-top: 30px;
 }
+i.fas.fa-clock
+{
+    font-size: 40px;
+    margin-top: 90px;
+
+}
+i.fas.fa-angry
+{
+    font-size: 40px;
+    margin-top: 90px;
+    color: #FCDC04;
+}
+i.fas.fa-wine-glass-alt
+{
+    font-size: 40px;
+    margin-top: 90px;
+    color: red;
+}
+section#projects.projects-section.bg-light
+{
+    margin-top: 90px;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+@media (min-width: 992px){
+  .projects-section .featured-text {
+      padding: 0 0 0 2rem;
+      border-left: .5rem solid #64a19d;
+  }
+}
+.projects-section .featured-text {
+    padding: 2rem;
+    margin-top: 50px;
+}
+@media (min-width: 992px){
+  .text-lg-left {
+      text-align: left!important;
+  }
+}
 /*page index */
 section.pricing {
     padding-top: 50px;
