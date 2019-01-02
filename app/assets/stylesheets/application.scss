@@ -324,3 +324,32 @@ i.far.fa-calendar-alt
 }
 
 /* page index end */
+/*footer*/
+footer.footer
+{
+    margin-top: 80px;
+    padding-top: 60px;
+    background-color:  #f8f8f8;
+    color: #838383;
+    margin-bottom: 18px;
+    font-weight: 500;
+
+    a {
+      float:center;
+      color: #838383;
+      list-style-type: none;
+    }
+    ul {
+          list-style-type: none;
+    }
+    li {
+        line-height: 2em;
+        float:left;
+    }
+    h5.headin5_amrc.col_white_amrc.pt2
+    {
+      color: #4e4e4e;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+}
