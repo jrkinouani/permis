@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
   get 'stages/index'
-
   get 'stages/show'
 
   devise_for :admins
@@ -10,6 +9,9 @@ Rails.application.routes.draw do
   get '/apropos'  => 'pages#apropos'
   get "/mentions" => 'pages#mentions'
   get "/infos_stage" => 'pages#infos_stage'
+  get "/test" => 'pages#test'
+  get "/contenu" => 'pages#contenu'
+
   resources :stages
 
 

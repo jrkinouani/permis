@@ -322,7 +322,21 @@ i.far.fa-calendar-alt
 {
     color: #2BA9BF;
 }
+/*page infos*/
+a#btn_org.btn.btn-danger
+{
+    background-color: #35b729;
+    font-size: 23px;
+    height: 50px;
 
+}
+a#btn_org.btn.btn-danger:hover
+{
+    color: #35b729;
+    font-size: 23px;
+    height: 50px;
+
+}
 /* page index end */
 /*footer*/
 footer.footer

@@ -10,4 +10,12 @@ class PagesController < ApplicationController
   def infos_stage
 
   end
+
+  def test
+
+  end
+
+  def contenu
+
+  end
 end
