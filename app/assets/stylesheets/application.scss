@@ -1,6 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+header
+{
+    background-color: #35b729;
+    color: #FFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 @media (max-width: 1200px)
 {
     .navbar-header
@@ -219,6 +226,7 @@ section#projects.projects-section.bg-light
 .img-fluid {
     max-width: 100%;
     height: auto;
+    height: 500px;
 }
 @media (min-width: 992px){
   .projects-section .featured-text {
@@ -366,4 +374,35 @@ footer.footer
       font-weight: 600;
       text-transform: uppercase;
     }
+}
+.z-banner {
+      z-index: 5000 !important;
+  }
+.ps-fixed {
+    position: fixed !important;
+}
+.l0 {
+    left: 0 !important;
+}
+.b0 {
+    bottom: 0 !important;
+}
+.r0 {
+    right: 0 !important;
+}
+.p16 {
+    padding: 16px !important;
+}
+.bg-black-700 {
+    background-color: #3b4045 !important;
+}
+.fc-white {
+    color: #FFF !important;
+}
+a#btn-footer.btn.btn-danger
+{
+    background-color: #35b729!important;
+    font-size: 23px;
+    height: 50px;
+
 }
