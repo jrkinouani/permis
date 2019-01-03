@@ -1,0 +1,29 @@
+<div class="container-fluid show">
+  <div class="row">
+    <div class=" col-lg-4 col-md-offset-4 col-md-4 col-xs-12" id="zone_paiement">
+    <%= form_tag charges_path do | f | %>
+      <div class="row">
+        <% if flash[:error].present? %>
+          <div id="error_explanation">
+            <p><%= flash[:error] %></p>
+          </div>
+        <% end %>
+          <h3 class="text_systeme">La fenêtre de paiement
+            sécurisée, s'ouvre en cliquant sur le bouton ci-dessous, <br/>
+            pour regler le montant de
+
+          <span><%= @reservation.price.to_i %></span> €</h3>
+          <%= hidden_field_tag :reservation_id,  @reservation.id %>
+      </div>
+         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-label="Payez avec votre carte bleue"
+              data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+              data-description="PERMIS A POINTS 974"
+              data-amount="<%= @reservation.price.to_f*100 %>"
+              data-currency ="eur"
+              data-locale="auto">
+          </script>
+    </div>
+    <% end %>
+   </div>
+</div>
