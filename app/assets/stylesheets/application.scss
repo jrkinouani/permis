@@ -346,6 +346,26 @@ a#btn_org.btn.btn-danger:hover
 
 }
 /* page index end */
+/*page test */
+p.text-test
+{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+#nav-main {
+    overflow: visible;
+}
+#nav-main {
+    position: absolute;
+
+    
+    width: 800px;
+    overflow: hidden;
+    list-style-type: none;
+    padding-bottom: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
 /*footer*/
 footer.footer
 {
