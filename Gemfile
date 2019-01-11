@@ -12,7 +12,9 @@ gem 'jquery-rails'
 gem 'rails_admin', '~> 1.3'
 gem 'devise'
 gem 'carrierwave', '~> 1.0'
-
+#gem 'fog'
+#gem "fog-aws"
+#gem 'rmagick', '~> 2.16'
 
 
 group :development, :test do
