@@ -14,6 +14,17 @@ class PagesController < ApplicationController
   def test
 
   end
+  def suspension
+
+  end
+
+  def annulation
+
+  end
+
+  def invalidation
+
+  end
 
   def contenu
 

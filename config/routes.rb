@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   get "/mentions" => 'pages#mentions'
   get "/infos_stage" => 'pages#infos_stage'
   get "/test" => 'pages#test'
+  get "/annulation" => 'pages#annulation'
+  get "/invalidation" => 'pages#invalidation'
+  get "/suspension" => 'pages#suspension'
+
   get "/contenu" => 'pages#contenu'
 
   resources :stages
