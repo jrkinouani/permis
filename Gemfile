@@ -16,6 +16,7 @@ gem "figaro"
 gem "fog-aws"
 gem 'rmagick', '~> 2.16'
 gem 'carrierwave-aws'
+gem 'stripe'
 
 
 group :development, :test do

@@ -2,6 +2,8 @@
   <div class="row">
     <p>Bonjour damien, <br>Une nouvelle réservation vient d'arriver par <br>
       <%= @reservation.first_name %> <%= @reservation.last_name %> <br>
-      pour les dates du <%= @reservation.date1 %></p>
+      voici son email, <%= @reservation.email %> <br>
+      pour les dates du <%= @reservation.stage.date1 %> <br>
+      le lieu est au <%= @reservation.stage.ville %></p>
   </div>
 </div>

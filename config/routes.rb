@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get "/contenu" => 'pages#contenu'
 
   resources :stages
-
+  resources :charges
 
   resources :reservations, only: [:index, :show, :new, :create]
   get 'reservations/_form'

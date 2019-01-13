@@ -6,9 +6,10 @@
         <h3 class="title_show">Récapitulatif de votre réservation    </h3>
       </div>
       <br>
-      <h4>Stage du: <%= @reservation.stage.date1 %></h4>
-      <h4>Prix total : <span><%= @reservation.price %> euros</span></h4><br/>
+      <h4>Votre stage se déroulera du : <%= @reservation.stage.date1 %></h4>
+      <h4>à l'adresse  : <span><%= @reservation .stage.ville %> </span></h4><br/>
       <div class="text-center">
+      <h3><%= link_to'Passez au paiement', new_charge_path(reservation_id: @reservation.id), class:"btn btn-info btn-rounded btn-lg" %></h3><br/>
       </div>
   </div>
  </div>
