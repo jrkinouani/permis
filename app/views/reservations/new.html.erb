@@ -60,11 +60,21 @@
           </div>
 
           <div class="form-group">
-            <label for="name" class="cols-sm-2 control-label">Téléchargez un document</label>
+            <label for="name" class="cols-sm-2 control-label">Téléchargez un document le courrier 48N</label>
             <div class="cols-sm-10">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fas fa-phone-volume"></i></span>
                 <%= f.file_field :document, type:"file", onchange:"readURL(this);" %>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="name" class="cols-sm-2 control-label">Téléchargez un document d'identité </label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fas fa-phone-volume"></i></span>
+                <%= f.file_field :docidone, type:"file", onchange:"readURL(this);" %>
               </div>
             </div>
           </div>

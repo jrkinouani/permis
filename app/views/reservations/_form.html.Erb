@@ -28,8 +28,12 @@
         <%= f.text_field :phone, placeholder: 'ex 0692 12 33 44',  class: "form-control"  %>
       </div>
       <div class="col-md-6">
-        <label for="">Téléchargez votre document</label>
+        <label for="">Téléchargez votre document :le courrier 48N</label>
        <%= f.file_field :document, type:"file", onchange:"readURL(this);" %>
+      </div>
+      <div class="col-md-6">
+        <label for="">Téléchargez votre document d'identité</label>
+       <%= f.file_field :docidone, type:"file", onchange:"readURL(this);" %>
       </div>
       <div class="col-md-6">
         <label for="">Sélectionnez un créneau</label>
