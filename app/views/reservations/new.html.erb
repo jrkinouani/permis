@@ -29,6 +29,17 @@
           </div>
 
           <div class="form-group">
+            <label for="name" class="cols-sm-2 control-label">Entrez votre date de naissance</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                <%= f.text_field :born,  placeholder: 'ex :12/12/1986', class: "form-control"%>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-group">
             <label for="name" class="cols-sm-2 control-label">Entrez votre email</label>
             <div class="cols-sm-10">
               <div class="input-group">
