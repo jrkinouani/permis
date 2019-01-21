@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190115070022) do
+ActiveRecord::Schema.define(version: 20190115070752) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20190115070022) do
     t.string "document"
     t.string "born"
     t.string "docidone"
+    t.string "docidtwo"
     t.index ["stage_id"], name: "index_reservations_on_stage_id"
   end
 

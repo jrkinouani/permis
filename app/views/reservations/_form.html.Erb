@@ -32,8 +32,12 @@
        <%= f.file_field :document, type:"file", onchange:"readURL(this);" %>
       </div>
       <div class="col-md-6">
-        <label for="">Téléchargez votre document d'identité</label>
+        <label for="">Téléchargez votre document d'identité "recto"</label>
        <%= f.file_field :docidone, type:"file", onchange:"readURL(this);" %>
+      </div>
+      <div class="col-md-6">
+        <label for="">Téléchargez votre document d'identité "verso"</label>
+       <%= f.file_field :docidtwo, type:"file", onchange:"readURL(this);" %>
       </div>
       <div class="col-md-6">
         <label for="">Sélectionnez un créneau</label>
