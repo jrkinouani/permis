@@ -10,9 +10,9 @@ class AdminMailer < ActionMailer::Base
 
   end
 
-  def user paiement(reservation)
+  def user(reservation)
     @reservation = reservation
     mail(from: 'biblioruncontact@gmail.com', to: @reservation.email, subject: "Convocation au stage !")
-    
+
   end
 end
