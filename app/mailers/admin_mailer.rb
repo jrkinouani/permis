@@ -1,12 +1,18 @@
 class AdminMailer < ActionMailer::Base
   def new_reservation(reservation)
     @reservation = reservation
-    mail(from: 'biblioruncontact@gmail.com', to: 'kinouani@gmail.com', subjectt: "Nouvelle réservation !")
+    mail(from: 'biblioruncontact@gmail.com', to: 'kinouani@gmail.com', subject: "Nouvelle réservation !")
   end
 
   def paiement(reservation)
     @reservation = reservation
-    mail(from: 'biblioruncontact@gmail.com', to: 'kinouani@gmail.com', subjectt: "'Paiement validé !")
+    mail(from: 'biblioruncontact@gmail.com', to: 'kinouani@gmail.com', subject: "'Paiement validé !")
 
+  end
+
+  def user paiement(reservation)
+    @reservation = reservation
+    mail(from: 'biblioruncontact@gmail.com', to: @reservation.email, subject: "Convocation au stage !")
+    
   end
 end

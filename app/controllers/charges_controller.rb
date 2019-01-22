@@ -20,6 +20,8 @@ class ChargesController < ApplicationController
     )
     @reservation = Reservation.find(params["reservation_id"])
       AdminMailer.paiement(@reservation).deliver_now
+      AdminMailer.user(@reservation).deliver_now
+
 
     rescue Stripe::CardError => e
       flash[:error] = e.message
