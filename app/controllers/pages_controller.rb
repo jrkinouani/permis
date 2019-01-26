@@ -29,4 +29,7 @@ class PagesController < ApplicationController
   def contenu
 
   end
+  def contact
+
+  end
 end

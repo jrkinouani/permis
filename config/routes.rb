@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get "/annulation" => 'pages#annulation'
   get "/invalidation" => 'pages#invalidation'
   get "/suspension" => 'pages#suspension'
+  get "/contact" => 'pages#contact'
 
   get "/contenu" => 'pages#contenu'
 
