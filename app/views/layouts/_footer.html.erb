@@ -1,4 +1,59 @@
-<footer class="footer">
+<!-- Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<ul class="list-unstyled quick-links">
+            <%= link_to (image_tag("/logo_permis.png",class: 'imglogo')), root_path %>
+            <li>PERMIS A POINTS 974 est un CSSR
+              (Centre de Sensibilisation à la Sécurité Routière)
+              agréé par la préfecture de La Réunion depuis
+               le 06 Décembre 2018 et enregistré sous le numéro d’exploitation : R 18 974 0003 0.
+            </li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>LIENS</h5>
+
+					<ul class="list-unstyled quick-links">
+            <li><%= link_to "Stage de récupération de points ", infos_stage_path%></li>
+            <li><%= link_to "Test psychotechnique", test_path%></li>
+
+
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>lIENS</h5>
+					<ul class="list-unstyled quick-links">
+            <li><%= link_to "Calendrier/inscription ", stages_path %></li>
+            <li><%= link_to "Contact", contact_path %></li>
+					</ul>
+				</div>
+			</div>
+			<!--<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>-->
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<!--<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>-->
+					<p class="h6">&copy Tous droits réservé <a class="text-green ml-2" href="https://www.permisapoints974.re" target="_blank">permisapoints974</a></p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- ./Footer -->
+
+<!--<footer class="footer">
  <div class="container bottom_border">
   <div class="row">
     <div class=" col-sm-4 col-md-4  col-lg-4 col-xs-12">
@@ -8,7 +63,7 @@
         <li><%= link_to "Accueil", root_path%></li>
         <li><%= link_to "stage de récupération de points ", infos_stage_path%></li>
         <li><a href="#">Test psychotechnique</a></li>
-        <!--<li><%= link_to "Qui nous sommes ?", apropos_path%></li>-->
+        <li><%= link_to "Qui nous sommes ?", apropos_path%></li>
       </ul>
      </div>
     </div>
@@ -38,7 +93,7 @@
 
   </div>
   </div>
-  <br><br><br>
+  <br><br><br>-->
 
 
   <div class="container">
