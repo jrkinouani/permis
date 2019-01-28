@@ -352,10 +352,12 @@ h1.titre.index.stage
 }
 /* page index end */
 /*page test */
-p.text-test
+h3.text-test
 {
     margin-right: 15px;
     margin-left: 15px;
+    font-weight: normal;
+    font-size: 18px;
 }
 #nav-main {
     overflow: visible;
@@ -383,7 +385,7 @@ section .section-title
 #footer
 {
     background:   #35b729 !important;
-    margin-top: 80px;
+    margin-top: 280px;
     padding-bottom: 50px;
     color: #fff;
 }
