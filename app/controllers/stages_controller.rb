@@ -2,7 +2,7 @@ class StagesController < ApplicationController
   before_action :set_stage, only: [:show, :update, :destroy, :edit]
 
 
-  def bew
+  def new
     @stage = Stade.new
   end
 
@@ -24,7 +24,7 @@ class StagesController < ApplicationController
   end
 
   def index
-    @stages = Stage.all
+    @stages = Stage.all.order(:created_at)
   end
 
   private
