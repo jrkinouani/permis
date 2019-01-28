@@ -3,31 +3,26 @@
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<ul class="list-unstyled quick-links">
-            <%= link_to (image_tag("/logo_permis.png",class: 'imglogo')), root_path %>
-            <li>PERMIS A POINTS 974 est un CSSR
-              (Centre de Sensibilisation à la Sécurité Routière)
-              agréé par la préfecture de La Réunion depuis
-               le 06 Décembre 2018 et enregistré sous le numéro d’exploitation : R 18 974 0003 0.
-            </li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-          <h5>LIENS</h5>
+					<h5>Nos services</h5>
 
 					<ul class="list-unstyled quick-links">
-            <li><%= link_to "Stage de récupération de points ", infos_stage_path%></li>
+						<li><%= link_to "Calendrier/inscription ", stages_path %></li>
+						<li><%= link_to "Stage de récupération de points ", infos_stage_path%></li>
             <li><%= link_to "Test psychotechnique", test_path%></li>
-
-
 					</ul>
 				</div>
 				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>LIENS</h5>
+          <h5>Notre entreprise</h5>
 					<ul class="list-unstyled quick-links">
-            <li><%= link_to "Calendrier/inscription ", stages_path %></li>
-            <li><%= link_to "Contact", contact_path %></li>
+						<li><%= link_to "Contact", contact_path %></li>
 						<li><%= link_to "Qui nous sommes ?", apropos_path%></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Logo</h5>
+					<ul class="list-unstyled quick-links">
+						<%= link_to (image_tag("/logo_permis.png",class: 'imglogo')), root_path %>
+
 					</ul>
 				</div>
 			</div>
