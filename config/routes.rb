@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 
   get "/contenu" => 'pages#contenu'
 
+  resources :messages, only: [:new, :create]
   resources :stages
   resources :charges
 

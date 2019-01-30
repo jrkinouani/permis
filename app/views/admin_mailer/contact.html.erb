@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+
+  <h3>Un nouveau message a été envoyé depuis le site :</h3>
+  <h3>De la part de <%= @message.name %></h3>,
+  <h3>avec l'adresse mail :
+    <%= @message.email %></h3> <br>
+  <h3>Voici son message : </h3><br>
+    <p><%= @message.message %></p>
+  </div>
+</div>

@@ -13,6 +13,11 @@ class AdminMailer < ActionMailer::Base
   def user(reservation)
     @reservation = reservation
     mail(from: 'biblioruncontact@gmail.com', to: @reservation.email, subject: "Convocation au stage !")
-
   end
+
+  def contact(message)
+    @message = message
+    mail(from: 'biblioruncontact@gmail.com', to:'kinouani@gmail.com', subject: "Nouveau message depuis le site")
+  end
+
 end
