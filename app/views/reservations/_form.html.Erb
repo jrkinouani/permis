@@ -7,6 +7,10 @@
 
 
       <%= form_for ([@stage, @stage.reservations.new])do |f | %>
+      <% if flash[:danger] %>
+        <div class="notice"><h1><%= flash[:danger] %></h1></div>
+      <% end %>
+
         <div class="col-md-6 ">
           <label for="">choisissez une date</label>
           <%= f.text_field :first_name,  placeholder: 'ex :Dimitri', class: "form-control"%>

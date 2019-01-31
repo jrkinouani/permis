@@ -8,6 +8,10 @@
 
 
       <%= form_for @reservation do |f | %>
+            <% if flash[:danger] %>
+              <div class="notice"><h1><%= flash[:danger] %></h1></div>
+            <% end %>
+
           <div class="form-group">
             <label for="name" class="cols-sm-2 control-label">Entrez votre nom</label>
             <div class="cols-sm-10">

@@ -27,19 +27,24 @@ class ReservationsController < ApplicationController
   end
 
   def create
-    @reservation = Reservation.create!(reservation_params)
-    stage = @reservation.stage
-     if stage
-       price = stage.price
-       if price
-        @reservation.price = stage.price
-      else
-          flash[:danger] = 'Vous avez mal renseigné les champs de textes !'
-      end
-      @reservation.save
+    @reservation = Reservation.new(reservation_params)
+     stage = @reservation.stage
+    if @reservation.save
       AdminMailer.new_reservation(@reservation).deliver_now
+       if stage
+         price = stage.price
+         if price
+          @reservation.price = stage.price
+          else
+            flash[:danger] = 'Vous avez mal renseigné les champs de textes !'
+          end
+        redirect_to reservation_path(@reservation)
+       end
+     else
+
+      redirect_to new_reservation_path(reservation_params)
+         flash[:danger] = 'Vous avez mal renseigné les champs de textes !'
      end
-     redirect_to reservation_path(@reservation)
   end
 
   def reservation_params
