@@ -2,9 +2,16 @@
   <div class="row">
     <p>Bonjour damien, <br>Une nouvelle réservation vient d'arriver par <br>
       <%= @reservation.first_name %> <%= @reservation.last_name %> <br>
+      date de naissance : <%= @reservation.born %> <br>
+      phone : <%= @reservation.phone %><br>
+      adresse : <%= @reservation.address %> <br>
       voici son email, <%= @reservation.email %> <br>
       pour les dates du <%= @reservation.stage.date1 %> <br>
-      le lieu est au <%= @reservation.stage.ville %></p>
-       <%= image_tag(@reservation.document, class: "avatar-full") %>
+      le lieu est au <%= @reservation.stage.ville %> <br>
+      Ci-dessous les documents envoyés : <br></p>
+        <%= image_tag(@reservation.docidone, size: "1200x628") %> <br> <br>
+        <%= image_tag(@reservation.docidone, size: "1200x628") %> <br> <br>
+       <%= image_tag(@reservation.document, size: "1200x628") %> <br> <br>
+
   </div>
 </div>

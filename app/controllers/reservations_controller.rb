@@ -36,14 +36,13 @@ class ReservationsController < ApplicationController
          if price
           @reservation.price = stage.price
           else
-            flash[:danger] = 'Vous avez mal renseigné les champs de textes !'
+            flash[:danger] = 'Vous devez remplir tous les champs et joindres les documents !'
           end
         redirect_to reservation_path(@reservation)
        end
      else
-
       redirect_to new_reservation_path(reservation_params)
-         flash[:danger] = 'Vous avez mal renseigné les champs de textes !'
+      flash[:danger] = 'Vous devez remplir tous les champs et télécharger les documents !'
      end
   end
 
