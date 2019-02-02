@@ -17,6 +17,7 @@
           <li><span class="fa-li"><i class="far fa-calendar-alt"></i></span><%= stage.date1 %></li>
           <li><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><%= stage.adresse %> </li>
           <li><span class="fa-li"><i class="fas fa-business-time"></i></span>horaire <%= stage.horaire %> </li>
+          <li><span class="fa-li"><i class="fas fa-users"></i></span><%= stage.nbstagiaire %>personnes par stage <em style="color:red;">(Places limitées)</em></li>
 
         </ul>
         <h4><%= button_to "Je m'inscris ! ", stage_path(stage), :class => "btn btn-block btn-primary text-uppercase", :method => :get %></h4>

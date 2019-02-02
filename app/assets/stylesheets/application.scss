@@ -191,11 +191,15 @@ h3.text-stage
     font-weight: 300;
     color: black;
 }
-i.far.fa-clock, i.fas.fa-users
+i.far.fa-clock
 {
     color: #6ea425;
     font-size: 40px;
     margin-top: 40px;
+}
+i.fas.fa-users
+{
+    color: #6ea425;
 }
 section.jumbotron.text-center
 {
