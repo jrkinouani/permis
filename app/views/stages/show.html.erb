@@ -6,12 +6,13 @@
       <div class="card mb-5 mb-lg-0">
         <div class="card-body">
            <h5 class="card-title text-muted text-uppercase text-center"><%= @stage.titre %></h5>
-           <small><h5 class="card-title text-muted text-uppercase text-center"><%= @stage.date2 %></h5></small> <br>
+           <small><h5 class="card-title text-muted text-uppercase text-center"><%= @stage.ville %></h5></small> <br>
            <h6 class="card-price text-center"><%= @stage.price %><span class="period">€/le stage </span></h6>
           <hr>
           <ul class="fa-ul">
             <li><span class="fa-li"><i class="far fa-calendar-alt"></i></span><%= @stage.date1 %></li>
-            <li><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><%= @stage.ville %> </li>
+            <li><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><%= @stage.adresse %> </li>
+            <li><span class="fa-li"><i class="fas fa-business-time"></i></span>horaire <%= @stage.horaire %> </li>
           </ul>
           <%= link_to 'Faire une réservation', new_reservation_path(stage_id: @stage.id), class: "btn btn-block btn-primary text-uppercase", id: "btn_car_show"%>
         </div>
