@@ -7,7 +7,7 @@ class Reservation < ApplicationRecord
      validates :phone, presence: true
      validates :born, presence: true
      validates :address, presence: true
-     validates :document, presence: true
+     #validates :document, presence: true
      validates :docidone, presence: true
      validates :docidone, presence: true
      validates :docidtwo,presence: true
