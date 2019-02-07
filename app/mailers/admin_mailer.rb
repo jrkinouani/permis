@@ -17,7 +17,7 @@ class AdminMailer < ActionMailer::Base
 
   def contact(message)
     @message = message
-    mail(from: 'damien.narsapa@permisapoints.re', to: ['kinouani@gmail.com','damien.narsapa@permisàpoints.re'], subject: "Nouveau message depuis le site")
+    mail(from: 'damien.narsapa@permisapoints974.re', to: ['kinouani@gmail.com','damien.narsapa@permispoints974.re'], subject: "Nouveau message depuis le site")
   end
 
 end
