@@ -17,7 +17,7 @@ class AdminMailer < ActionMailer::Base
 
   def contact(message)
     @message = message
-    mail(from: 'biblioruncontact@gmail.com', to:'kinouani@gmail.com', subject: "Nouveau message depuis le site")
+    mail(from: 'damien.narsapa@permisapoints.re', to: ['kinouani@gmail.com','damien.narsapa@permisàpoints.re'], subject: "Nouveau message depuis le site")
   end
 
 end
