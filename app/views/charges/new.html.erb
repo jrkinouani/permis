@@ -14,14 +14,14 @@
               <h3 class="text_systeme">La fenêtre de paiement
                 sécurisée, s'ouvre en cliquant sur le bouton ci-dessous, <br/>
                 pour regler le montant de
-              <h3><span><%= @reservation.price.to_f %></span> €</h3>
+              <h3><span><%= @reservation.stage.price.to_f %></span> €</h3>
               <%= hidden_field_tag :reservation_id,  @reservation.id %>
 
              <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                   data-label="Payez avec votre carte bleue"
                   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
                   data-description="Permisapoints974"
-                  data-amount="<%= @reservation.price.to_f*100 %>"
+                  data-amount="<%= @reservation.stage.price.to_f*100 %>"
                   data-currency ="eur"
                   data-locale="auto">
               </script>

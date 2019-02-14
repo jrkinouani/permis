@@ -4,7 +4,7 @@
     <h4>à l'adresse  : <span><%= @reservation.address %> </span></h4><br/>
     par <%= @reservation.first_name %> <%= @reservation.last_name %>
   pour contacter le client voici l'email <%= @reservation.email %>, pour un prix total de
-  <%= @reservation.price %> euros.
+  <%= @reservation.stage.price %> euros.
 
 </h3><br>
 <h3>Bonne journée !</h3>
