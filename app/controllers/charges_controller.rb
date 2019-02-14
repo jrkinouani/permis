@@ -4,7 +4,7 @@ class ChargesController < ApplicationController
   end
   def create
     @reservation = Reservation.find(params["reservation_id"])
-    @amount = @reservation.price.to_i * 100
+    @amount = @reservation.stage.price.to_i * 100
 
 
     customer = Stripe::Customer.create(
