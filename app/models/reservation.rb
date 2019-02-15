@@ -8,9 +8,8 @@ class Reservation < ApplicationRecord
      validates :born, presence: true
      validates :address, presence: true
      #validates :document, presence: true
-     validates :docidone, presence: true
-     validates :docidone, presence: true
-     validates :docidtwo,presence: true
+     #validates :docidone, presence: true
+     #validates :docidtwo,presence: true
 
    mount_uploader :document, DocumentUploader
    mount_uploader :docidone, DocidoneUploader
