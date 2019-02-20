@@ -29,20 +29,25 @@ class ReservationsController < ApplicationController
   def create
     @reservation = Reservation.new(reservation_params)
      stage = @reservation.stage
-    if @reservation.save
-      AdminMailer.new_reservation(@reservation).deliver_now
-       if stage
-         price = stage.price
-         if price
-          @reservation.price = stage.price
-          else
-            flash[:danger] = 'Vous devez remplir tous les champs et joindres les documents !'
-          end
-        redirect_to reservation_path(@reservation)
-       end
+     if stage.nbstagiaire.to_i < stage.reservations.size
+       flash[:sorry] = 'Nous sommes désolé, ce stage est complet! Choisissez une autre date'
+       redirect_to stage
      else
-      redirect_to new_reservation_path(reservation_params)
-      flash[:danger] = 'Vous devez remplir tous les champs et télécharger les documents !'
+      if @reservation.save
+        AdminMailer.new_reservation(@reservation).deliver_now
+         if stage
+           price = stage.price
+           if price
+            @reservation.price = stage.price
+            else
+              flash[:danger] = 'Vous devez remplir tous les champs et joindres les documents !'
+            end
+          redirect_to reservation_path(@reservation)
+         end
+       else
+        redirect_to new_reservation_path(reservation_params)
+        flash[:danger] = 'Vous devez remplir tous les champs et télécharger les documents !'
+       end
      end
   end
 
