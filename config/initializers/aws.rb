@@ -10,6 +10,6 @@ CarrierWave.configure do |config|
       }
 
       config.fog_directory  = "permis974"
-      config.fog_public     = false
+      config.fog_public     = true
       config.fog_attributes = { 'Cache-Control' => "max-age=#{365.day.to_i}" }
     end
