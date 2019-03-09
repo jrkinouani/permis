@@ -11,24 +11,24 @@
       Ci-dessous les documents envoyés : <br></p>
       <h4>Document le courrier 48N :</h4> <br>
 
-    <% if @reservation.document %>
+    <% if @reservation %>
       <%= image_tag @reservation.document.url, class:"img-responsive", id:"img.mail"%> <br> <br>
     <% else %>
     <h4>pas de document</h4>
     <% end %>
 
-    <% if @reservation.docidone %>
+    <% if @reservation %>
       <%= image_tag @reservation.docidone.url, class:"img-responsive", id:"img.mail"%> <br> <br>
     <% else %>
     <h4>pas de document</h4>
     <% end %>
-    <% if @reservation.docidtwo %>
+    <% if @reservation %>
       <%= image_tag @reservation.docidtwo.url, class:"img-responsive", id:"img.mail"%> <br> <br>
     <% else %>
     <h4>pas de document</h4>
-    <% end %>
+    <% end %>-->
 
-      <!--<%= image_tag @reservation.document.url, class:"img-responsive"%> <br> <br>
+      <!--<%= image_tag @reservation.document.url, class:"img-responsive", id:"img.mail"%> <br> <br>
       <h4>Document d'identité :</h4> <br>
       <%= image_tag @reservation.docidone.url, class:"img-responsive" %> <br> <br>
       <h4>Document d'identité :</h4> <br>
