@@ -18,12 +18,12 @@
     <% end %>
 
     <% if @reservation.docidone %>
-      <%= image_tag @reservation.document.url, class:"img-responsive", id:"img.mail"%> <br> <br>
+      <%= image_tag @reservation.docidone.url, class:"img-responsive", id:"img.mail"%> <br> <br>
     <% else %>
     <h4></h4>
     <% end %>
     <% if @reservation.docidtwo %>
-      <%= image_tag @reservation.document.url, class:"img-responsive", id:"img.mail"%> <br> <br>
+      <%= image_tag @reservation.docidtwo.url, class:"img-responsive", id:"img.mail"%> <br> <br>
     <% else %>
     <h4></h4>
     <% end %>
