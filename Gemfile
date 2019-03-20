@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
 gem 'rails_admin', '~> 1.3'
-gem 'devise'
+gem 'devise', '~>4.6.0'
 gem 'fog'
 gem "figaro"
 gem "fog-aws"
