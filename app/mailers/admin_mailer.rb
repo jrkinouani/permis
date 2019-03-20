@@ -1,7 +1,7 @@
 class AdminMailer < ActionMailer::Base
   def new_reservation(reservation)
     @reservation = reservation
-    mail(from: 'damien.narsapa@permisapoints974.re', to: ['kinouani@gmail.com','oumasma93@hotlmail.com'], subject: "Nouvelle réservation !")
+    mail(from: 'damien.narsapa@permisapoints974.re', to: ['kinouani@gmail.com','damien.narsapa@permisapoints974.re'], subject: "Nouvelle réservation !")
   end
 
   def paiement(reservation)
